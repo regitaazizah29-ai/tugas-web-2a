@@ -12,7 +12,7 @@ body {
     width: 800px;
 }
 
-/* mengatur jarak dalam header  */
+/* mengatur jarak dalam header */
 .header {
     padding-top: 20px;
     padding-right: 20px;
@@ -32,21 +32,68 @@ body {
 }
 
 .nav li {
-    /* membuat list  navigasi menjadi horizontal dan mengatur jarak antar menu navigasi */
     display: inline-block;
     margin-right: 10px;
     margin-top: 20px;
 }
+
 .nav li a {
-    /* mengatur warna menu navigasi */
     color: navy;
-    /* text-decoration: none; untuk menghilangkan garis bawah pada menu navigasi */
     text-decoration: none;
 }
 
-/* membuat animasi saat link  di sorot */
+/* membuat animasi saat link disorot */
 .nav li a:hover {
-    background-color: orange;
+    background-color: blue;
     color: white;
     transition: 0.5s;
+}
+
+/* Untuk CSS Banner */
+.banner {
+    height: 300px;
+    /* Tambahkan ../ sebelum img/ agar CSS bisa keluar dari folder css */
+    background-image: url(../img/windah.jpg);
+    background-size: cover;
+    background-position: center;
+    border-top: 5px solid navy;
+    border-bottom: 5px solid skyblue;
+}
+
+/* untuk isi */
+.isi {
+    padding: 20px;
+}
+ 
+.isi h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+ 
+.isi .penulis {
+    font-size: 14px;
+    margin-top: -10px;
+}
+ 
+.isi .penulis a {
+    text-decoration: none;
+    color: skyblue;
+}
+ 
+.isi p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/* untuk footer */
+.footer {
+    background-color: navy;
+    height: 50px;
+    padding: 2px;
+}
+ 
+.footer .copyright {
+    font-size: 16px;
+    color: white;
+    text-align: center;
 }
