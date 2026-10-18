@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Percabangan JavaScript</title>
+</head>
+<body>
+    <!-- Percabangan IF -->
+     <script type="text/javascript">
+        var password = prompt('Masukan Password Anda');
+ 
+        if (password == 'admin123') {
+            document.write('<h3>Selamat Datang Admin</h3>');
+        } else {
+            document.write('<h3>Maaf Password Salah</h3>');
+        }
+    </script>
+
+    <!-- Percabangan IF-ELSE -->
+    <script type="text/javascript">
+        var nilai = prompt('Masukan Nilai Anda');
+ 
+        if (nilai > 85) {
+            document.write('<h3>Nilai A</h3>');
+        } else if(nilai >= 75) {
+            document.write('<h3>Nilai B</h3>');
+        } else {
+            document.write('<h3>Nilai C</h3>');
+        }
+    </script>
+
+    <!-- Percabangan SWITCH -->
+     <script type="text/javascript">
+        var hari = prompt('Masukan Kode Hari [1 s/d 7]');
+ 
+        switch(hari) {
+            case "1" : 
+            document.write('<h2>SENIN</h2>');
+            break;
+            case "2" : 
+            document.write('<h2>SELASA</h2>');
+            break;
+            case "3" : 
+            document.write('<h2>RABU</h2>');
+            break;
+            case "4" : 
+            document.write('<h2>KAMIS</h2>');
+            break;
+            case "5" : 
+            document.write('<h2>JUMAT</h2>');
+            break;
+            case "6": 
+            document.write('<h2>SABTU</h2>');
+            break;
+            case "7" : 
+            document.write('<h2>MINGGU</h2>');
+            break;
+            default :
+            document.write('<h2>MAAF KODE SALAH</h2>');
+        }
+    </script>
+</body>
+</html>

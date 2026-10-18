@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar DOM</title>
+</head>
+<body>
+    <!-- DOM Selector -->
+    <h1 id="judul">Belajar DOM</h1>
+ 
+    <p>paragraf 1 HTML DOM (HTML Document Object Model) adalah representasi berbasis objek dari struktur dokumen HTML yang memungkinkan bahasa pemrograman seperti JavaScript untuk membaca, mengubah, dan memanipulasi isi, struktur, serta gaya halaman web secara dinamis.</p>
+ 
+    <p>paragraf 2 DOM (Document Object Model) adalah antarmuka pemrograman (API) yang merepresentasikan dokumen HTML atau XML ke dalam suatu struktur berbentuk pohon (tree). Setiap elemen, atribut, dan teks di dalam halaman web dianggap sebagai sebuah objek atau node.</p>
+ 
+    <h3 class="daftar">Daftar</h3>
+    <ul>
+        <li>Argentina</li>
+        <li>America</li>
+        <li>India</li>
+        <li>Indonesia</li>
+        <li>Belanda</li>
+    </ul>
+
+    <!-- memilih object berdasarkan ID Element -->
+    <script>
+        let judul=document.getElementById('judul');
+        console.log(judul);
+    </script>
+
+    <!-- memilih element berasarkan nama tag HTML -->
+     <script>
+        let p=document.getElementsByTagName('p');
+        console.log(p);
+    </script>
+
+    <!-- mengubah beberapa elemen sekaligus. -->
+     <script>
+        let daftar=document.getElementsByClassName('daftar');
+        console.log(daftar);
+    </script>
+
+    <!-- memanipulasi beberapa elemen yang memiliki class sama-->
+     <script>
+        let title=document.querySelector('#judul');
+        console.log(title);
+    </script>
+
+    <!-- menggunakan regex atau tanda. Dimana tanda pagar (#) untuk menyeleksi ID, tanda titik ( . ) untuk CLASS dan sebagainya-->
+    <script>
+        let list=document.querySelectorAll('li');
+        console.log(list);
+    </script>
+</body>
+</html>

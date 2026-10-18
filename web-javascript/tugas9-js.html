@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penggunaan Object</title>
+</head>
+<body>
+    <script type="text/javascript">
+        // membuat Object
+ 
+        var obj = {
+            penulis : "Regita Azizah Nuraini",
+            buku : [
+                "Modul Analisa Proses Bisnis",
+                "Modul Pemrograman WEB"
+            ],
+            hal : 109,
+            isTerbit : true
+        }
+ 
+        console.log(obj);
+    </script>
+
+    <!-- membuat object dengan constructor -->
+     <script type="text/javascript">
+        //membuat object dengan construtor
+ 
+        function orang(nama,gender,umur,alamat) {
+            this.nama = nama;
+            this.gender = gender;
+            this.umur = umur;
+            this.alamat = alamat;
+        }
+ 
+        //membuat instance object
+        var Dewasa = new orang("Regita", "P", 20,['Dsn. Bogangin', 'Desa Padangan', 'Kec. Kayen Kidul', 'Kab. Kediri']); ;
+ 
+        console.log(Dewasa);
+    </script>
+</body>
+</html>
